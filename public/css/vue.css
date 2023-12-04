@@ -1,0 +1,14 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

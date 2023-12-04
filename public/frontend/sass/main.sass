@@ -1,0 +1,1927 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1380px
+
+.header
+	.navbar
+		padding: 0
+		height: 90px
+		a
+			text-transform: uppercase
+	.navbar-nav
+		height: 100%
+	.dropdown-toggle
+		height: 100%
+		padding-top: 20px
+	.dropdown-toggle::after
+		content: none
+.navbar-brand
+	padding: 0 80px
+	margin-right: 0
+.navbar-collapse
+	display: flex
+	z-index: 2
+	justify-content: space-between
+	height: 100%
+.icon-search
+	width: 20px
+	height: 20px
+.form-search
+	position: relative
+	max-width: 70%
+	width: 100%
+	height: 100%
+	background: #e7e7ea
+	.btn
+		position: absolute
+		top: 50%
+		left: 20px
+		transform: translateY(-50%)
+		&:focus
+			outline: none
+			box-shadow: none
+	input
+		border: none
+		padding-left: 5rem
+		width: 100%
+		border-radius: 0
+		&:focus
+			box-shadow: none
+.form-inline.form-search input
+	width: 100%
+	background: #e7e7ea
+.form-control:focus
+	border-color: none
+.bth-header
+	min-width: 250px
+	width: 100%
+	display: block
+	height: 100%
+	color: #fff
+	text-decoration: none
+	display: flex
+	align-items: center
+	transition: .2s
+	justify-content: center
+	padding: 0 20px
+	position: relative
+	&:hover
+		text-decoration: none
+		color: #fff
+.btn-header-blue
+	color: #fff
+	background: $blue
+	transition: .1s
+	&:hover
+		background: lighten($blue,5%)
+.btn-red
+	background: $red
+	&:hover
+		background: lighten($red,5%)
+.btn-blue
+	background: $blue
+	&:hover
+		background: darken($blue,10%)
+.btn-gray
+	background: #474747
+	&:hover
+		color: #fff
+		background: lighten(#474747,5%)
+.arrow
+	border: solid $blue
+	border-width: 0 2px 2px 0
+	display: inline-block
+	padding: 5px
+	width: 7px
+.navbar-nav
+	flex-direction: row
+.navbar-toggler
+	display: none
+.down
+	transform: rotate(45deg)
+	-webkit-transform: rotate(45deg)
+.btn-lang
+	width: 100%
+	.nav-link
+		font-weight: bold
+		color: $blue
+	.dropdown-toggle
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		color: $blue!important
+		background: #c8c8d9
+		transition: .2s
+		width: 85px
+		&:hover
+			background: darken(#c8c8d9,5%)
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+	color: $blue
+.navbar-nav
+	.bth-header
+		font-weight: bold 
+		img
+			width: 20px
+		.bth-header-img
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 45px
+			height: 45px
+			background: rgba(255,255,255,.3)
+			border-radius: 50%
+			margin-right: 20px
+			flex-shrink: 0
+		span
+			display: flex
+			font-weight: bold
+		.count
+			margin-left: 10px
+			display: block
+.bth-header-text
+	.icon
+		position: absolute
+		right: 20px
+		bottom: 11px
+		img
+			width: 15px
+.balance
+	font-size: 14px
+	color: #fff
+	position: absolute
+	bottom: 0
+.home-slider
+	&__item
+		height: 90vh
+		background-size: cover
+		background-repeat: none
+	&__content
+		max-width: 50%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		height: 100%
+		padding-left: 4rem
+		h2
+			font-size: 5rem
+			color: #fff
+			font-weight: 700
+		p
+			color: #fff
+			margin-top: 30px
+			font-size: 30px
+
+dd
+	font-weight: 400
+	font-size: 14px
+.details-list dt
+	flex: 0 0 50%
+	text-overflow: ellipsis
+	overflow: hidden
+.details-list dt
+	float: left
+	padding: 0 5px 0 0
+	font-size: 14px
+	line-height: 20px
+	color: #696a6b
+	font-weight: 400
+.details-list dd
+	flex: 0 0 50%
+	text-overflow: ellipsis
+	overflow: hidden
+
+.details-list-flex
+	display: flex
+	flex-flow: row
+	flex-wrap: wrap
+	overflow: visible
+	margin-bottom: 0
+.details-list dd
+	margin-left: auto
+	text-align: right
+
+.arrow-slider
+	.fal
+		font-size: 30px
+		color: #fff
+		transition: .1s
+	border: 1px solid #fff
+	width: 90px
+	height: 90px
+	position: absolute
+	bottom: 200px
+	right: 10%
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: .1s
+	&:hover
+		text-decoration: none
+		.fal
+			color: $blue
+		background: #fff	
+.prev-arrow
+	bottom: 100px
+	z-index: 1
+
+.section-search-lots
+	position: relative
+	.search-lots-wrap
+		background: #fff
+		z-index: 2
+		width: calc(100% - 200px)
+		padding: 40px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: -80px
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 25px rgba(0,0,0,0.22)
+.select2
+	width: auto!important
+
+.select2
+	flex: 1 1 155px
+	min-width: 155px
+	margin-right: 25px
+	&:focus,&:active
+		outline: none
+		box-shadow: none
+.select2:last-child
+	margin-right: 0
+.select2-container .select2-selection--single
+	height: 55px
+	padding: 10px
+	background: #f2f2f2
+	border-radius: 0
+	border: none
+	&:focus
+		outline: none
+		box-shadow: none		
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	border: solid #1d1c62
+	border-width: 0 2px 2px 0
+	display: inline-block
+	padding: 5px
+	width: 7px
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	top: 10px
+	right: 15px
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	transform: rotate(45deg)
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+	transform: rotate(225deg)
+	border-width: 0 2px 2px 0
+	border-color: #1d1c62
+.form-group-select
+	display: flex
+.search-lots-top
+	display: flex
+	justify-content: space-between
+.search-lots-top-brand
+	display: flex
+	div
+		max-width: 115px
+		margin-left: 20px
+		img
+			width: 100%
+.search-lots-top-title
+	flex: 1 1 60%
+	h3
+		color: $blue
+		font-weight: bold
+		font-size: 36px
+		margin-bottom: 30px
+	p
+.form-search-lots
+	margin-top: 40px
+
+.btn-blue
+	width: 100%
+	height: 60px
+	background: $blue
+	color: #fff
+	text-transform: uppercase
+	font-weight: bold
+	margin-top: 25px
+	border-radius: 40px
+	transition: .1s
+	display: flex
+	align-items: center
+	justify-content: center
+	&:hover
+		color: #fff
+		background: lighten($blue,5%)
+	&:focus
+		outline: none
+		box-shadow: none	
+.section-purchase-scheme
+	margin-top: 500px
+	margin-bottom: 200px
+	.card
+		border: 0
+		h4
+			margin: 30px 0
+			font-size: 24px
+			font-weight: bold
+.card-img-top
+	background: #dfdfed
+	border-radius: 12px
+	img
+		width: 100%
+.color-blue
+	color: $blue
+.h2-style
+	font-weight: bold
+	font-size: 36px
+
+.card-content
+	padding: 20px
+	position: relative
+.card-item
+	border-radius: 12px
+	border: 0
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 25px rgba(0,0,0,0.22)
+	h4
+		font-size: 20px
+		text-transform: uppercase
+		img
+			max-width: 30px
+			width: 100%
+			margin-right: 10px
+	.card-saving
+		font-size: 12px
+		color: #009344
+		text-transform: uppercase
+		background: rgba(0, 147, 68, .2)
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 30px
+		margin-top: 25px
+	.card-footer
+		text-transform: uppercase
+		background: none
+		display: flex
+		padding: 0
+		margin: 10px 0 25px 0
+		border: 0
+		p
+			font-size: 24px
+			font-weight: 500
+			margin-bottom: 0
+		span
+			color: #7c7c7c
+			font-size: 12px
+		div
+			width: 50%
+	.card-img-top
+		border-radius: 12px
+		overflow: hidden
+.char-card
+	p
+		margin-bottom: 10px
+		font-size: 14px
+	span
+		background: #e5e5e5
+		font-size: 12px
+		text-transform: uppercase
+		padding: 4px
+		margin-right: 10px
+.all-card-photos,.all-card-photos a
+	font-size: 14px
+	font-weight: 600
+	text-align: center
+	text-transform: uppercase
+	color: #000
+	font-weight: 600
+	&:hover
+		text-decoration: none
+.all-card-photos
+	margin-top: 20px
+.card-item-vertical
+	flex-direction: row
+	margin-bottom: 25px
+	.card-btn
+		padding: 0 10px
+	.card-content
+		width: 100%
+	.card-img-top
+		max-width: 240px
+	.btn-blue
+		margin-top: 0
+		height: 38px
+		font-size: 14px
+	.card-title
+		color: #2d2c86
+.card-title a
+	color: $blue
+	text-decoration: none	
+.card-info-rate
+	background: #f2f2f2
+	max-width: 230px
+	width: 100%
+.card-footer-info
+	display: flex
+	font-size: 14px
+	margin-bottom: 10px
+	span
+		min-width: 115px
+.card-footer-vertical
+	margin-top: 30px
+	overflow: hidden
+	.card-content
+		width: 100%
+.card-item .card-footer-info p
+	margin-bottom: 0
+	font-size: 14px
+	font-weight: bold
+.card-info-rate-timer
+	display: flex
+	div
+		color: $blue
+		font-weight: bold
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		background: #e8e8ef
+		font-size: 18px
+		border-right: 1px solid #abaac4
+		min-width: 50px
+		width: 100%
+		padding: 5px 0 10px 0
+		span
+			font-size: 10px
+			color: #000
+	div:last-child
+		border: none
+.card-info-rate-price
+	padding: 30px 10px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	p
+		color: $blue
+		font-size: 24px
+		font-weight: 600
+		line-height: 26px
+		margin-bottom: 10px
+	span
+		font-size: 14px
+		text-transform: uppercase
+		color: #000	
+
+.section-catalog-lot .h2-style
+	margin-bottom: 50px
+.left-about-block
+	width: 40%
+	margin: 60px 0
+.right-about-block
+	width: 60%
+	display: flex
+	align-items: center
+.section-about
+	height: 690px
+	position: relative
+	display: flex
+	margin-top: 150px
+	margin-bottom: 50px
+.about-block-content
+	color: #fff
+	h2
+		font-size: 36px
+		font-weight: bold
+		color: #fff
+		margin-bottom: 25px
+.about-item-statistics
+	display: flex
+	margin-top: 70px
+	.about-item
+		width: 115px
+		height: 115px
+		background: #282472
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		margin-right: 40px
+		flex-shrink: 0
+		p
+			font-size: 36px
+			margin-bottom: 10px
+			line-height: 26px
+			small
+				font-size: 14px
+		span
+			font-size: 14px
+
+.left-about-block
+	background-repeat: no-repeat
+	background-size: cover
+.left-about-block-inner
+	position: absolute
+	max-width: 800px
+	top: 50%
+	left: 10%
+	transform: translateY(-50%)
+	img
+		width: 100%
+.box-why
+	margin-bottom: 70px
+	.img
+		width: 125px
+		height: 125px
+		background: #fff
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 25px
+		margin-bottom: 35px
+		img
+			width: 100%
+			color: red
+	h2
+		font-size: 24px
+		font-weight: bold
+		margin-bottom: 20px
+.mx-50
+	margin-right: 50px
+	margin-left: 50px	
+.section-why
+	background: #f0f0f3
+	margin-top: -60px
+	padding-top: 250px
+	.h2-style
+		margin-bottom: 70px
+.section-form-wrap
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	padding: 70px 0
+	height: 100%
+.right-form-block 
+	h2
+		font-size: 36px
+		font-weight: 700
+		color: #fff
+		margin-bottom: 25px
+	p
+		color: #fff
+.section-form
+	height: 600px
+	position: relative
+	margin-bottom: 80px
+.left-form-block-inner
+	max-width: 600px
+	width: 100%
+	position: absolute
+	top: 50%
+	left: 10%
+	transform: translateY(-50%)
+	img
+		width: 100%
+.left-form-block
+	width: 40%
+.right-form-block
+	width: 60%
+	display: flex
+	flex-direction: column
+	justify-content: center
+.btn-form-block
+	display: flex
+.btn-blue.btn-transparent
+	background: transparent
+	border: 1px solid #fff
+	&:hover
+		background: #fff
+		color: $blue
+.right-form-block
+	.btn-transparent
+		margin-right: 30px
+.btn-blue.btn-white
+	background: #fff
+	border: 1px solid #fff
+	color: $blue
+	&:hover
+		background: transparent
+		color: #fff
+.footer
+	background: #000
+	padding: 50px 0
+	ul
+		padding-left: 0
+.social-link
+	list-style: none
+	display: flex
+	padding-left: 0
+	justify-content: space-between
+	li
+		font-size: 24px
+		font-weight: bold
+		color: #fff
+		width: 23%
+		height: 120px
+		img
+			width: 40px
+			margin-right: 30px
+		a
+			color: #fff
+			text-decoration: none
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 100%
+			width: 100%
+			background: #626262
+			transition: .1s
+.telegram:hover
+	background: #30a7df
+.viber:hover
+	background: #8074d6
+.instagram:hover
+	background: radial-gradient(circle at 43% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 107%)
+.youtube:hover
+	background: #fa0001
+.ftr-row-middle
+	padding: 80px 0 50px
+	display: flex
+	p
+		color: #fff
+	a
+		color: #fff
+		text-decoration: none
+	.column
+		width: 30%
+	.column-width
+		width: 40%
+.ftr-row-bottom
+	display: flex
+	div
+		width: 50%
+		color: #fefefe
+		a
+			color: #003cff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+.catalog-filters
+	background: #fff
+	width: 100%
+	height: auto
+.section-catalog
+	background: #f2f2f2
+	padding-top: 55px
+	padding-bottom: 50px
+	a:hover
+		text-decoration: none
+
+.catalog-tag
+	display: flex
+	flex-wrap: wrap
+	a
+		min-height: 30px
+		background: #fff
+		margin-right: 10px
+		transition: .1s
+		color: #000
+		border-radius: 5px
+		display: flex
+		align-items: center
+		font-size: 16px
+		justify-content: center
+		padding: 0 5px
+		margin-bottom: 10px
+		&:hover
+			text-decoration: none
+			background: $blue
+			color: #fff
+		i
+			margin-left: 10px
+	img
+		width: 10px
+		margin-left: 10px
+.row-paginate
+	padding: 30px 0 40px
+	h3
+		font-size: 16px
+		font-weight: bold
+		margin-bottom: 12px
+.row-paginate
+	.col-xl-9
+		padding-left: 10rem
+.catalog-paginate
+	ul
+		list-style-type: none
+		display: flex
+		padding-left: 0
+		justify-content: flex-end
+		li
+			margin-right: 10px
+		li.active a
+			background: $blue
+			color: #fff
+		a
+			color: #000
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 50px
+			width: 50px
+			background: #fff
+			font-size: 18px
+			font-weight: 600
+			transition: .1s
+			&:hover
+				background: $blue
+				color: #fff
+				text-decoration: none
+.catalog-tag .show_more
+	background: $blue
+	color: #fff
+	i
+		color: #fff
+.w-20
+	width: 20px
+.catalog-filters
+	padding: 25px 15px
+	box-shadow: 0 14px 15px rgba(0,0,0,0.25)
+.catalog-filter-title
+	margin-bottom: 20px
+	display: flex
+	h2
+		font-size: 24px
+		margin-bottom: 0
+	.icon
+		margin-right: 10px
+.catalog-filter-item
+	margin-bottom: 25px
+	p
+		font-weight: 600
+		margin-bottom: 10px
+		font-size: 15px
+	.card-price-tab
+		background: #f2f2f2
+		max-width: 100%
+		min-width: 100%
+		input
+			background: #f2f2f2
+.section-main
+	background: #f2f2f2
+	padding-top: 55px
+.section-cabinet
+	padding-top: 
+
+.section-sidebar
+	background: #fff
+	box-shadow: $shadow
+
+.sidebar-nav
+	list-style-type: none
+	padding-left: 0
+	a
+		color: #000
+		text-transform: uppercase
+		background: #fff
+		font-weight: bold
+		text-align: center
+		border-bottom: 1px solid #c2c2c2
+		width: 100%
+		height: 75px
+		padding: 15px 30px
+		display: flex
+		align-items: center
+		transition: .1s
+		&:hover
+			text-decoration: none
+			background: $blue
+			color: #fff
+			span
+				background: rgba(#fff,.2)
+			i
+				color: #fff
+		i
+			margin-left: 10px
+			color: rgba($blue,.4)
+	li:last-child a
+		border: 0
+	.dropdown-menu
+		a:hover
+			background: rgba($blue,.3)
+		.dropdown-item
+			padding-top: 10px 20px
+			height: 50px
+	.dropdown.show .dropdown-toggle
+		background: $blue
+		color: #fff
+		span
+			background: rgba(255,255,255,.2)
+	.dropdown-toggle::after
+		content: '\f078'
+		font-family: "Font Awesome 5 Pro"
+		border: 0
+		position: absolute
+		right: 20px
+		// transition: .2s
+.sidebar-nav .dropdown.show .dropdown-toggle::after
+	transform: rotate(180deg)	
+.sidebar-nav.dropdown-item span
+	font-size: 18px
+.sidebar-nav li.active a
+	background: #1d1c62
+	color: #fff
+	span
+		background: rgba(#fff,.2)
+.pb-70
+	padding-bottom: 70px
+.sidebar-nav span
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	width: 45px
+	height: 45px
+	background: rgba($blue,.2)
+	border-radius: 50%
+	margin-right: 20px
+	-ms-flex-negative: 0
+	flex-shrink: 0
+	margin-right: 20px
+	font-size: 24px
+	img
+		width: 20px
+.d-flex-center
+	display: flex
+	align-items: center
+	justify-content: center
+.card-circle-img
+	width: 100px
+	height: 100px
+	background: rgba($blue,.4)
+	border-radius: 50%
+	margin: 0 auto
+.card-personal
+	box-shadow: $shadow
+	border: 0
+	h4
+		font-size: 18px
+		font-weight: bold
+		margin: 25px 0
+	p
+		font-size: 14px
+.card-personal h4.h4-style
+	font-size: 24px
+.h2-style
+	color: $blue
+	font-weight: bold
+.row-bookmarks
+	margin-top: 80px
+	margin-bottom: 80px
+	.h2-style
+		font-size: 36px
+		span
+			color: rgba($blue,.4)
+.card-body-top
+	height: 75px
+	align-items: center
+	display: flex
+	justify-content: space-around
+	p
+		margin-bottom: 0
+.bg-blue
+	background: rgba($blue,.4)
+.bg-green
+	background: #cce9da
+.no-border
+	border: 0
+.card-vin
+	box-shadow: $shadow
+	margin-top: 62px
+	margin-bottom: 55px
+.card-help
+	box-shadow: $shadow
+	.card-text
+		margin: 20px 0
+.card-footer-help
+	display: flex
+	flex-direction: column
+	a
+		color: #000
+
+.black-link
+	a
+		color: #000
+		&:hover
+			text-decoration: none	
+.card-footer-help
+	a
+		font-weight: bold
+		margin-bottom: 20px
+		span
+			color: $blue
+			margin-right: 10px
+			font-size: 20px	
+.row-bookmarks
+	.card-img-top img
+		height: 100%
+		object-fit: cover
+.card-item-vertical
+	overflow: hidden
+.card-bookmarks-item
+	position: relative
+	padding: 0
+	.card-block
+		padding: 20px 30px 50px 30px
+	.card-footer-vertical
+		position: absolute
+		height: 45px
+		bottom: 0
+		width: 100%
+		display: flex
+		align-items: center
+		padding-left: 30px
+	.card-footer-info
+		margin-bottom: 0
+		p,span
+			text-transform: uppercase
+		p
+			color: $blue
+			font-size: 18px
+		span
+			font-size: 12px
+	.card-footer-info
+		display: flex
+		align-items: center
+.card-bg-red 
+	.card-footer-vertical
+		background: rgba($red,.4)
+	.card-footer-info
+		p
+			color: #c71a26
+	.card-img-top
+		background: rgba($red,.4)
+.card-bg-gray .card-footer-vertical
+	background: #e8e8ef
+.d-flex-lg
+	display: flex
+	justify-content: space-between
+.row-bookmarks
+	.btn-transparent
+		border-color: $blue
+		color: $blue
+		max-width: 150px
+		font-size: 14px
+		height: 30px
+		margin-top: 10px
+.nav-tabs
+	border-bottom: none
+
+.nav-tabs .nav-link.active,.nav-tabs .nav-link:hover,.nav-tabs .nav-link:focus
+	background: $blue
+	color: #fff
+	border: none
+
+.nav-tabs .nav-link
+	border-radius: 0
+	transition: .1s
+	border: 0
+	color: #000
+	height: 60px
+	display: flex
+	align-items: center
+	padding: 0 20px
+	margin-right: 20px
+	background: #f2f2f2
+	span
+		margin-right: 15px
+		font-size: 24px
+.card-personal .card-tabs h4
+	margin-bottom: 10px
+.card-price-tab
+	min-width: 200px
+	max-width: 200px
+	width: 100%
+	height:	60px
+	display: flex
+	align-items: center
+	padding: 0 20px
+	font-size: 18px
+	input
+		border: 0
+		width: 100%
+.step-2 .card-price-tab
+	max-width: 380px
+.error-text
+	color: red
+.btn-w-short
+	max-width: 300px
+.font-small
+	font-size: 14px
+.font-small p
+	line-height: 24px
+.card-input
+	input
+		width: 100%
+		border: 0
+		height: 60px
+		background: #f2f2f2
+		padding: 10px 20px
+	span
+		margin-top: 15px
+		display: block
+.card-input .error-color
+	background: rgba($red,.4)
+.error-notify
+	color: $red
+	font-size: 14px
+
+.chek-label
+	position: relative
+	width: 20px
+	height: 20px
+	cursor: pointer
+	overflow: hidden
+	flex-shrink: 0
+	margin-right: 10px
+	margin-top: 3px
+.chek-styled
+	position: absolute
+	height: 0
+	width: 0
+	opacity: 0
+.valid
+	background: rgba($blue,.4)
+.card-input .valid
+	background: rgba($blue,.4)
+.checkmark
+	border: 1px solid #a6a6a6
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	transition: 0.2s
+	border-radius: 50%
+.check-wrap
+	display: flex
+.card-tabs
+	.check-wrap
+		margin: 30px 0 10px
+.checkmark::after
+	content: "\f00c"
+	font-family: "Font Awesome 5 Pro"
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	opacity: 0
+	transition: 0.2s
+	color: #fff
+	font-size: 11px
+.chek-styled:checked ~ .checkmark
+	background: rgba($blue,.9)
+	border: 1px solid $blue
+
+.chek-styled:checked ~ .checkmark::after
+	opacity: 1
+
+.card_buy
+	.nav-tabs .nav-link
+		height: 40px
+		margin-right: 0
+		background: #fefefe
+		transition: .2s
+		justify-content: center
+		text-transform: uppercase
+	.card-info-rate-price
+		padding-bottom: 10px
+		background: rgba($blue,.2)
+		padding-top: 10px
+		margin: 30px 0 20px 0
+.card_buy .nav-tabs .nav-link.active,.card_buy .nav-tabs .nav-link:focus,.card_buy .nav-tabs .nav-link:hover
+	background: #1d1c62
+	color: #fff
+.card_buy .h4-style
+	font-size: 18px
+	font-weight: 700
+	margin: 25px 0
+.book_mark
+	position: absolute
+	top: 20px
+	right: 20px
+	color: #cccccc
+	font-size: 24px
+	cursor: pointer
+	&:hover
+		color: $red
+.book_mark.active
+	color: $red
+.mt-10
+	margin-top: 6rem
+
+.login-page
+	display: flex
+	height: 100vh
+	.form-proup
+		margin-top: 30px
+		span
+			display: inline-block
+			position: absolute
+			right: 15px
+			top: 15px
+			a
+				color: #001eff
+				text-decoration: none
+	.btn
+		margin-top: 40px
+	input
+		transition: .2s
+		&:focus
+			box-shadow: 0 0 10px rgba(0,0,0,.3)
+			background: #fff
+
+.login-page-form
+	flex: 1 1 50%
+	padding: 30px 100px 30px 100px
+	.navbar-brand
+		padding: 0
+.login-page-form .navbar-brand:focus
+	outline: none
+.login-page-bg
+	flex: 1 1 50%
+	height: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	display: flex
+	justify-content: center
+	padding: 100px 100px
+	h2
+		font-size: 80px
+		font-weight: bold
+		color: $blue
+.login-page-form-wrap
+	padding-top: 100px
+	h4
+		font-size: 14px
+		font-weight: 500
+		margin: 40px 0 30px 0
+		text-transform: uppercase
+
+.form-row-social-account 
+	padding-top: 70px
+	display: flex
+	a
+		padding: 12px 20px
+		font-weight: 400
+		max-width: 280px
+		font-size: 14px
+		display: block
+		border-radius: .15rem
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		color: #000
+		margin-right: 20px
+		width: 100%
+		text-transform: uppercase
+		font-weight: 500
+		&:hover
+			text-decoration: none
+		img
+			width: 35px
+			margin-right: 10px
+	.s-facebook
+		transition: .1s
+		background: rgba($blue,.1)
+		&:hover
+			background: rgba($blue,.2)
+	.s-google
+		background: #fcf7e7
+		transition: .1s
+		&:hover
+			background: #f5eac7
+	a:first-child
+		margin-right: 15px
+
+.s-facebook
+	background: #e8f1fa
+
+.modal-notifi
+	.modal-dialog
+		max-width: 440px
+	.modal-content
+		border: 0
+		border-radius: 0
+	.btn-transparent
+		border-color: $blue
+		color: #000
+		&:hover
+			background: $blue
+			color: #fff
+	p
+		font-weight: 600
+		text-align: center
+		margin-bottom: 0
+	.btn
+		height: 40px
+		margin-top: 0
+	.modal-footer
+		flex-wrap: nowrap
+		padding: 2rem 1.5rem
+	.modal-header
+		padding-bottom: 2rem 1
+.modal-header
+	border-bottom: 0		
+.modal-title
+	font-size: 24px
+	text-transform: uppercase
+	color: $blue
+	margin: 0 auto
+	font-weight: bold
+.modal .close
+	position: absolute
+	top: 15px
+	right: 16px
+	padding: 10px
+.modal-footer
+	border: 0
+.nav-fill .nav-item
+	flex: 0 0 auto
+
+.btn-grey
+	width: 100%
+	height: 60px
+	background: #474747
+	color: #fff
+	text-transform: uppercase
+	font-weight: 700
+	margin-top: 25px
+	border-radius: 40px
+	-webkit-transition: .1s
+	-o-transition: .1s
+	transition: .1s
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	&:hover
+		color: #fff
+		background: lighten(#474747,5%)
+
+.card-info-rate
+	.btn
+		height: 40px
+	h2
+		font-size: 14px
+		color: $red
+		margin-bottom: 0
+.card-info-rate-title
+	background: rgba($red,.3)
+	height: 45px
+	display: flex
+	align-items: center
+	justify-content: center
+.card-info-rate.auction-ended
+	background: rgba($red,.2)
+.card_buy .auction-ended .card-info-rate-price
+	background: transparent
+.calc-input 
+	display: flex
+	button
+		border: 0
+		height: 60px
+		width: 40px
+		border-radius: 0
+		background: rgba($blue,.4)
+		&:hover,&:focus,&:active
+			box-shadow: none
+			outline: none
+			background-color: rgba($blue,.5)
+		i
+			color: #000
+	.counter
+		height: 60px
+		background: #f3f2f2
+		border: 0
+		border-radius: 0
+		width: 100%
+		text-align: center
+		padding: 0 50px
+.modal-footer-block-red
+	background: rgba($red,.2)
+	padding: 20px
+	p
+		font-size: 14px
+		margin-bottom: 0
+.modal-rate
+	.modal-content
+		padding: 25px
+	.modal-body
+		label
+			font-weight: bold
+	.btn-blue
+		height: 40px
+		font-size: 14px
+		margin-top: 0
+		margin-bottom: 25px
+.modal-footer-block-red
+
+.link-decor-blue
+	color: $blue
+	text-decoration: none
+	border-bottom: 1px solid $blue
+	&:hover
+		text-decoration: none
+		border-bottom: none
+
+.dropdown-menu
+	margin: 0
+	border: none
+	border-radius: 0
+	display: block
+	opacity: 0
+	pointer-events: none
+	min-width: 100%
+	-webkit-transition: .2s
+	-o-transition: .2s
+	transition: .2s
+	top: calc(100% + 20px)
+	box-shadow: 0 10px 12px rgba($blue, .2)
+	padding: 0
+	.dropdown-item
+		padding: 20px
+
+.dropdown-item.active, .dropdown-item:active
+	background-color: rgba($blue,.2)
+
+.show > .dropdown-menu
+	opacity: 1
+	pointer-events: all
+	top: 100%
+.dropdown-cabinet
+	.dropdown-menu
+		width: calc(100% + 40px)
+		left: -40px
+	.dropdown-item
+		display: flex
+		margin-bottom: 1px
+		box-shadow: 0 2px 2px rgba($blue, .1)
+		p
+			margin-bottom: 0
+			font-size: 14px
+			font-weight: bold
+		a
+			background: none
+			font-size: 14px
+			color: #0041d5
+			height: auto
+			font-weight: 400
+			padding: 0
+			text-transform: inherit
+			border: 0
+		.bth-header-text 
+			span
+				margin-top: 20px
+			small
+				display: block
+				margin-top: -2px
+.product-image
+	height: 470px
+	width: 100%
+	object-fit: cover
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+.thumbs-images-wrap
+	margin-top: 30px
+	display: flex
+	flex-wrap: wrap
+.thumbnail-image
+	border: 1px solid $blue
+	border-radius: 10px
+	overflow: hidden
+	transition: .2s
+	width: 130px
+	height: 90px
+	padding: 1px
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	border: 2px solid transparent
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+.thumbnail
+	margin-bottom: 10px
+	.thumbnail-image
+		opacity: .6
+.selected.thumbnail .thumbnail-image
+	opacity: 1
+	border: 2px solid $blue
+.cart-product-title
+	margin-bottom: 20px
+	padding-right: 50px
+	h2
+		font-size: 30px
+		font-weight: bold
+	.book_mark
+		top: 5px
+
+.product-image
+	width: 100%
+	height: 400px
+	background-color: #cccccc
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+
+
+.card-product
+	margin-top: 30px
+	.card-price-tab
+		max-width: 100%
+		background: #f2f2f2
+		width: 100%
+		p
+			margin-bottom: 0
+	.card-body-top span
+		position: absolute
+		right: 20px
+		img
+			width: 30px
+			border-radius: 5px
+	.card-body-top
+		padding: 0 20px
+		justify-content: left
+		background: rgba(29,28,98,.2)
+		.icon
+			margin-right: 10px
+		h3
+			font-size: 18px
+			margin-bottom: 0
+			font-weight: bold
+	.card-info-rate-timer
+		div
+			background: #fff
+			padding: 10px 0 15px 0
+			span
+				font-size: 14px
+	.small-btn
+		margin: 20px auto
+	.calc-input .counter,.calc-input button
+		height: 40px
+	.card-body-top
+		h3
+			text-transform: uppercase
+			margin-top: 4px
+	.color-green
+		color: #00ac00
+	.card-body-top h4
+		font-size: 16px
+		margin-bottom: 0
+		margin-left: 30px
+.card-body-row
+	display: flex
+	justify-content: space-between
+	p:first-child
+		margin-right: 2rem
+.details-list
+	.vin
+		background: #e5e5e5
+		padding: 1px 5px
+		border-radius: 5px
+.card-body-row 
+	.ss-main .ss-single-selected
+		background: #f2f2f2
+		height: 50px
+		padding: 10px 10px
+		border: 0
+		border-radius: 0
+	.slim-select-2
+		width: 165px
+	.ss-main .ss-single-selected .placeholder
+		font-size: 14px
+	.ss-main .ss-single-selected .ss-arrow span
+		padding: 2px
+.small-btn
+	height: 40px
+	font-size: 14px
+	max-width: 200px
+.card-body-row p
+	font-size: 14px
+.title-p
+	font-weight: 600
+	margin-bottom: 10px
+
+.total-summ
+	justify-content: space-between
+	font-weight: bold
+.ss-main 
+	.ss-single-selected
+		border: 0
+		border-radius: 0
+	.ss-single-selected .placeholder .ss-disabled,.ss-multi-selected .ss-values .ss-disabled
+		color: #a0a0a0
+.catalog-filters,.select-styled
+	.ss-main .ss-single-selected
+		background: #f2f2f2
+		height: 50px
+		padding: 10px 20px
+		border: 0
+		border-radius: 0
+.select-styled
+	.ss-main .ss-single-selected
+		height: 60px
+.catalog-filters
+	.ss-multi-selected
+		min-height: 50px
+		background: #f2f2f2
+		padding: 10px 20px
+		border: 0
+		border-radius: 0
+.row-paginate
+	.ss-single-selected
+		height: 60px
+		padding: 20px
+.ss-main .ss-content .ss-list .ss-option.ss-highlighted, .ss-main .ss-content .ss-list .ss-option:hover
+	background: rgba($blue,.3)
+	padding-left: 20px	
+.ss-main .ss-content .ss-list .ss-option
+	padding-left: 20px	
+.ss-main .ss-multi-selected .ss-values .ss-value
+	background: #fff
+	color: #000
+.ss-main .ss-multi-selected .ss-values .ss-value
+	font-size: 16px
+.ss-main .ss-single-selected .ss-arrow
+	margin: -1px 4px 0 15px
+.ss-main .ss-multi-selected .ss-add
+	margin: 11px 5px 0 15px
+.ss-main .ss-content .ss-search input
+	border: 1px solid #1d1c62
+	border-radius: 0
+.catalog-filter-item-group
+	display: flex
+	justify-content: space-between
+	.catalog-filter-item-select,.catalog-filter-item-select
+		width: 45%
+	.h-50px
+		height: 50px!important
+	.card-personal.h-50px
+		box-shadow: none
+.form-search-lots 
+	.ss-single-selected
+		background: #f2f2f2
+		height: 60px
+		padding-left: 20px
+		color: #000
+		font-weight: 500
+	.form-group-select
+		justify-content: space-between
+.form-search-lots .ss-single-selected.ss-open-below
+	background: #fff
+	box-shadow: 0 1px 14px rgba(0,0,0,.2)
+.form-search-lots .ss-main .ss-content.ss-open
+	box-shadow: 0 10px 14px rgba(0,0,0,.2)
+
+.ss-list::-webkit-scrollbar-button:hover,.country-list::-webkit-scrollbar-button:hover
+	background-color:#aaa
+.ss-list::-webkit-scrollbar-thumb,.country-list::-webkit-scrollbar-thumb
+	background-color:#b2b2b2
+
+.ss-list::-webkit-scrollbar-thumb:hover,.country-list::-webkit-scrollbar-thumb:hover
+	background-color:#b2b2b2
+
+.ss-list::-webkit-scrollbar-track,.country-list::-webkit-scrollbar-track
+	background-color:#dfdfdf
+
+.ss-list::-webkit-scrollbar-track:hover,.country-list::-webkit-scrollbar-track:hover
+	background-color:#dadada
+
+.ss-list::-webkit-scrollbar,.country-list::-webkit-scrollbar
+	width: 10px
+	height: 10px
+.select-item
+	max-width: 300px
+	width: 100%
+.form-group-number
+	.card-input .country-list span
+		display: inline-block
+		margin-top: 0
+
+.intl-tel-input.allow-dropdown .selected-flag
+	border-right: 2px solid #fff
+	width: 80px
+	padding-left: 25px
+.intl-tel-input.allow-dropdown input,.intl-tel-input.allow-dropdown input[type=tel]
+	padding-left: 105px
+.intl-tel-input
+	width: 100%
+.intl-tel-input .selected-flag .iti-arrow
+	right: 15px
+.intl-tel-input .country-list .country
+	padding: 15px 10px
+.form-control:focus
+	border-color: rgba($blue,.3)
+	outline: 0
+	box-shadow: 0 0 0 0.2rem rgba($blue,.3)
+.form-control
+	border-radius: 0
+.profile-submit
+	margin-top: 70px
+
+.drop .cont
+	width: 500px
+	height: 170px
+	color: #8E99A5
+	-webkit-transition: all 0.5s ease-out
+	-moz-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+	margin: auto
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+
+.drop .cont i
+	font-size: 400%
+	color: #8E99A5
+	position: relative
+.drop .cont .browse
+	margin: 10px 25%
+	color: white
+	padding: 8px 16px
+	border-radius: 5px
+	background: $blue
+.drop input
+	width: 100%
+	height: 100%
+	cursor: pointer
+	background: red
+	opacity: 0
+	margin: auto
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+#list
+	width: 100%
+	text-align: left
+	position: absolute
+	left: 20px
+	top: 20px
+#list .thumb
+	height: 75px
+	border: 1px solid #323a44
+	margin: 10px 5px 0 0
+.drop
+	width: 96%
+	height: 300px
+	border: 3px dashed #DADFE3
+	border-radius: 15px
+	overflow: hidden
+	text-align: center
+	background: white
+	-webkit-transition: all 0.5s ease-out
+	-moz-transition: all 0.5s ease-out
+	transition: all 0.5s ease-out
+	position: relative
+	margin: auto
+.drop-wrapp
+	width: 100%
+	height: 100%
+	margin-top: 40px
+
+.register-page-link
+	padding: 25px 0
+	text-align: center
+	a
+		color: #0000ff
+		font-weight: 500
+
+@media only screen and (min-width : 992px)
+	.px-sm-70
+		padding-left: 70px
+		padding-right: 70px
+
+@media only screen and (max-width : 1580px)
+	.bth-header
+		min-width: 210px
+	.navbar-brand
+		padding: 0 50px
+	.dropdown-cabinet .dropdown-menu
+		width: calc(100% + 85px)
+	.select-item
+		margin-right: 7px	
+	.home-slider__item
+		height: 700px
+	.home-slider__content h2
+		font-size: 3rem
+	.home-slider__content p
+		font-size: 24px
+	.left-about-block-inner
+		max-width: 500px
+	.login-page-bg h2
+		font-size: 40px
+	.login-page-form
+		padding: 30px 50px 30px 50px
+	.login-page-form-wrap
+		padding-top: 80px
+	.form-row-social-account
+		padding-top: 30px
+@media only screen and (max-width : 1200px)
+	.form-search
+		display: none
+	.navbar-expand-lg .navbar-collapse
+		justify-content: flex-end
+	.row-paginate .slim-select
+		width: 120px
+	.row-paginate .col-xl-9
+		padding-left: 15px
+		margin-top: 40px
+	.catalog-paginate ul
+		justify-content: left
+		flex-wrap: wrap
+	.catalog-paginate ul li
+		margin-bottom: 15px
+	.card-item-vertical
+		flex-direction: column
+	.card-info-rate
+		max-width: 100%
+		margin-bottom: 30px
+	.card-item .card-img-top
+		max-width: 100%
+	.all-card-photos
+		margin-top: 15px
+		margin-bottom: 15px
+	.about-item-statistics .about-item p
+		font-size: 21px
+	.about-item-statistics .about-item
+		width: 110px 
+		height: 110px
+	.left-about-block,.left-form-block
+		display: none
+	.right-about-block,.right-form-block
+		width: 100%
+@media only screen and (max-width : 992px)
+	.social-link li a
+		font-size: 16px
+	.social-link li img
+		width: 30px
+		margin-right: 15px
+	.ftr-row-middle,.ftr-row-bottom
+		flex-direction: column
+	.navbar-brand
+		padding: 0 10px
+	.header .navbar-nav
+		height: 80px
+	.header .navbar
+		height: auto
+	.navbar-brand
+		padding-top: 10px
+		padding-bottom: 20px
+		width: 100%
+	.catalog-tag
+		margin-top: 50px
+	.navbar-expand-lg .navbar-collapse
+		justify-content: center
+	.navbar-nav 
+		li
+			width: 100%
+		li:nth-child(1),li:nth-child(2)
+			width: 50%
+		.nav-item
+			height: 60px
+	.navbar-nav
+		flex-wrap: wrap	
+	.dropdown-cabinet .dropdown-menu
+		width: 100%
+	.bth-header
+		min-width: 100%
+	.navbar-nav .btn-lang
+		position: absolute
+		top: 0
+		right: 0
+		width: 85px
+		height: 64px
+	.header .dropdown-toggle
+		padding-top: 5px
+	.navbar-nav .bth-header .bth-header-img
+		width: 35px
+		height: 35px
+	.header__slider
+		padding-top: 40px
+	.section-search-lots .search-lots-wrap
+		width: calc(100% - 20px)
+		position: relative
+		top: 20px
+	.section-purchase-scheme
+		margin-top: 80px
+	.form-search-lots 
+		.form-group-select
+			display: block
+		.select-item
+			margin-bottom: 30px
+			max-width: 100%
+	.search-lots-top
+		flex-direction: column
+	.home-slider__content
+		max-width: 100%
+	.prev-arrow
+		bottom: 20px
+		z-index: 1
+		left: 20px
+	.next-arrow
+		bottom: 20px
+		right: 20px
+	.home-slider__content p
+		font-size: 18px
+	.login-page-bg
+		display: none
+	.login-page-bg
+		flex: 1 1 100%
+	.login-page
+		height: 100%
+	.drop .cont
+		width: 100%
+@media only screen and (max-width : 780px)
+	.social-link
+		flex-wrap: wrap
+		li
+			width: 46%
+			margin-bottom: 15px
+	.catalog-tag
+		margin-top: 30px
+	.catalog-paginate ul a
+		width: 35px
+		height: 35px
+	.bth-header
+		font-size: 16px
+	.mx-50
+		margin-left: 0
+		margin-right: 0
+	.about-item-statistics
+		flex-direction: column
+	.right-about-block
+		padding-top: 40px
+		padding-bottom: 40px
+		background-size: cover
+		height: 900px
+	.about-item-statistics .about-item
+		margin: 20px auto
+	.btn-form-block
+		flex-direction: column
+	.arrow-slider
+		width: 60px
+		height: 60px
+	.home-slider__content
+		padding-left: 1rem
+		h2
+			font-size: 2.5rem
+	.home-slider__item
+		height: 80vh
+@media only screen and (max-width : 480px)
+	.card-personal
+		margin-bottom: 30px
+	.nav-tabs .nav-link
+		margin-right: 0
+		margin-bottom: 10px
+	.search-lots-top-brand div
+		margin-left: 0
+	.section-purchase-scheme .card
+		margin: 0 30px 60px
+	.section-purchase-scheme
+		margin-bottom: 70px
+	.ftr-row-bottom div,.ftr-row-middle .column-width,.ftr-row-middle .column
+		width: 100%
+	.mt-10
+		margin-top: 3rem
+	.form-row-social-account
+		flex-direction: column
+	.form-row-social-account a
+		margin-bottom: 15px
+
+
+			

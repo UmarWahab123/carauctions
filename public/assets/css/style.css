@@ -1,0 +1,186 @@
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+    right: 0.9em !important;
+    content: "" !important;
+}
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before{
+    content: "" !important;
+}
+.myreadonly{pointer-events: none;}
+.pointer{cursor: pointer;}
+label {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+li.breadcrumb-item a {
+    font-weight: bold;
+    font-size: 15px !important;
+}
+.main-menu-content.ps a {
+    font-weight: 500;
+}
+.pointerclass{
+    cursor: pointer;
+}
+.btn {
+    /*color: #fff !important;*/
+    /*border-radius: 100px;*/
+    letter-spacing: .1em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 800 !important;
+    padding-top: 10px !important;
+    padding-right: 15px !important;
+    padding-bottom: 10px !important;
+    padding-left: 15px !important;
+    text-decoration: none !important;
+    /*border-radius: 60px 65px 55px 45px/35px 40px 50px 60px!important;*/
+    outline: none !important;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.green-color{color: #e9bf36 !important;}
+.darkgreen-color{color: #28a745 !important;}
+.red-color{color: red !important;}
+.yellow-color{color: orange  !important;}
+.blue-color{color: #00A3CC;}
+.black-color{color: black;}
+.new-shadow {
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+}
+.contest-item {
+    position: relative;
+    display: table;
+    background: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+}
+.new-shadow-all {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.card-title {
+    color: #e9bf36;
+    font-weight: bolder;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+.light-layout thead th {
+    background: #28a745 !important;
+    color:#fff !important;
+}
+.light-layout .modal-header  {
+    background: orange !important;
+}
+.light-layout .modal-header  h5{
+    color: #fff !important;
+}
+.light-layout .content-header-title {color: #e9bf36 !important;}
+.breadcrumb-wrapper {  text-transform: capitalize;  }
+.content-header-title {
+    text-transform: capitalize;
+}
+.video-style {
+    object-fit: fill;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.video-style
+{
+    background-color: #ffcccc; /* background gradient */
+    background-image: linear-gradient(top, #fff, #fcc);
+    background-image: -moz-linear-gradient(top, #fff, #fcc);
+    background-image: -webkit-linear-gradient(top, #fff, #fcc);
+    background-image: -o-linear-gradient(top, #fff, #fcc);
+    background-image: -ms-linear-gradient(top, #fff, #fcc);
+}
+.video-style {
+    box-shadow: 0 0 10px #ccc;
+}
+.video-style:hover,
+.video-style:focus
+{
+    box-shadow: 0 0 20px #f88;
+}
+/*ROLE ACCESS  CSS*/
+div.treeview ul:first-child:before {
+    display: none;
+}
+
+.treeview, .treeview ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #369;
+}
+
+.treeview ul {
+    margin-left: 1em;
+    position: relative;
+}
+
+.treeview ul ul {
+    margin-left: .5em;
+}
+
+.treeview ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid;
+    /* creates a more theme-ready standard for the bootstrap themes */
+    bottom: 15px;
+}
+
+.treeview li {
+    margin: 0;
+    padding: 0 1em;
+    line-height: 2em;
+    font-weight: 700;
+    position: relative;
+}
+
+.treeview ul li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+
+.tree-indicator {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.treeview li a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.treeview li button, .treeview li button:active, .treeview li button:focus {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    background: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    outline: 0;
+}

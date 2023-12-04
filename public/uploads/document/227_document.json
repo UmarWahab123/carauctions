@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "b1f9672b-b13f-423a-9203-8500aeb59a2a",
+		"name": "Advocate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new_referral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/new_referral/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"new_referral",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "working_referral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/working_referral/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"working_referral",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointment_referral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/appointment_referral/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"appointment_referral",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sold_referral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/sold_referral/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"sold_referral",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unqualified_referral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/unqualified_referral/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"unqualified_referral",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extra_pay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/extra_pay/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"extra_pay",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "document_view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/document_view/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"document_view",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wallet_view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/wallet_view/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"wallet_view",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/setting/1/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"setting",
+						"1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "term_view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/term_view/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"term_view",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "privacy_view",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.myadvocator.com/privacy_view/app",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"myadvocator",
+						"com"
+					],
+					"path": [
+						"privacy_view",
+						"app"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
